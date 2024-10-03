@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ondas Eletromagnéticas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <div id="ondas">
+        <div id="1" class="ondas-baixas" onclick="openAbout(this.id)">
+            <p>Ondas Baixas</p>
+        </div>
+        <div id="2" class="ondas-radio" onclick="openAbout(this.id)">
+            <p>Rádio</p>
+            <div id="3" class="ondas-radio-microondas" onclick="openAbout(this.id)">
+                <p>Microondas</p>
+            </div>
+        </div>  
+        <div id="4" class="ondas-infravermelhas" onclick="openAbout(this.id)">
+            <p>Infravermelho</p>
+        </div>
+        <div id="5" class="luz-visivel" onclick="openAbout(this.id)">
+            <div class="vermelho"></div>
+            <div class="laranja"></div>
+            <div class="amarelo"></div>
+            <div class="verde"></div>
+            <div class="azul-claro"></div>
+            <div class="azul-escuro"></div>
+            <div class="roxo"></div>
+        </div>
+        <div id="6" class="ondas-ultravioletas" onclick="openAbout(this.id)">
+            <p>Ultravioleta</p>
+        </div>
+        <div id="7" class="ondas-raiox" onclick="openAbout(this.id)">   
+            <p>Raios-X</p>
+        </div>
+        <div id="8" class="ondas-raiosgama" onclick="openAbout(this.id)">
+            <p>Raios Gama</p>
+        </div>
+    </div>
+
+    <div id="card" onclick="closeAllCards()">
+        <div id="card1" class="card-content">
+            <h1>Ondas Baixas</h1>
+            <div class="card-text">
+                <div>
+                    <h1>Saúde:</h1>
+                    <p>Normalmente não afetam a saúde, pois têm pouca energia para interagir com o corpo humano.</p>
+                </div>
+                <div>
+                    <h1>Onde é usada?</h1>
+                    <p>Comunicações submarinas, medições científicas e em ambientes com alta interferência.</p>
+                </div>
+                <div>
+                    <h1>Comprimento da onda:</h1>
+                    <p>Extremamente longo, variando de 10 mil a 100 mil quilômetros.</p>
+                </div>
+                <div>
+                    <h1>Frequência:</h1>
+                    <p>Extremamente baixa (3 a 30 Hz).</p>
+                </div>
+                <img src="assets/ELF.jpg" alt="Extremely Low Frequency">
+            </div>
+            <button class="closeButton" onclick="closeCard(this)">X</button>
+        </div>
+        
+        <div id="card2" class="card-content">
+            <h1>Ondas de Rádio</h1>
+            <div class="card-text">
+                <div>
+                    <h1>Saúde:</h1>
+                    <p>Seguras em baixas frequências, mas exposição intensa pode causar aquecimento dos tecidos.</p>
+                </div>
+                <div>
+                    <h1>Onde é usada?</h1>
+                    <p>Rádio FM/AM, TV, comunicação de longa distância e redes sem fio.</p>
+                </div>
+                <div>
+                    <h1>Comprimento da onda:</h1>
+                    <p>Variável, entre 1 milímetro e 100 quilômetros.</p>
+                </div>
+                <div>
+                    <h1>Frequência:</h1>
+                    <p>De 30 Hz a 300 GHz.</p>
+                </div>
+                <img src="assets/ondas/radio.png" alt="Radio Waves">
+            </div>
+            <button class="closeButton" onclick="closeCard(this)">X</button>
+        </div>
+        
+        <div id="card3" class="card-content">
+            <h1>Microondas</h1>
+            <div class="card-text">
+                <div>
+                    <h1>Saúde:</h1>
+                    <p>Exposição excessiva pode aquecer tecidos corporais, mas normalmente são seguras em baixos níveis.</p>
+                </div>
+                <div>
+                    <h1>Onde é usada?</h1>
+                    <p>Comunicações via satélite, radares, fornos de micro-ondas.</p>
+                </div>
+                <div>
+                    <h1>Comprimento da onda:</h1>
+                    <p>Entre 1 milímetro e 1 metro.</p>
+                </div>
+                <div>
+                    <h1>Frequência:</h1>
+                    <p>Entre 300 MHz e 300 GHz.</p>
+                </div>
+                <img src="assets/ondas/microondas.png" alt="Microwaves">
+            </div>
+            <button class="closeButton" onclick="closeCard(this)">X</button>
+        </div>
+        
+        <div id="card4" class="card-content">
+            <h1>Ondas Infravermelhas</h1>
+            <div class="card-text">
+                <div>
+                    <h1>Saúde:</h1>
+                    <p>Exposição prolongada pode causar aquecimento, mas são geralmente inofensivas em níveis naturais.</p>
+                </div>
+                <div>
+                    <h1>Onde é usada?</h1>
+                    <p>Controles remotos, câmeras de visão noturna, termografia.</p>
+                </div>
+                <div>
+                    <h1>Comprimento da onda:</h1>
+                    <p>De 700 nanômetros a 1 milímetro.</p>
+                </div>
+                <div>
+                    <h1>Frequência:</h1>
+                    <p>Entre 300 GHz e 430 THz.</p>
+                </div>
+                <img src="assets/ondas/infravermelho.png" alt="Infrared Waves">
+            </div>
+            <button class="closeButton" onclick="closeCard(this)">X</button>
+        </div>
+        
+        <div id="card5" class="card-content">
+            <h1>Luz Visível</h1>
+            <div class="card-text">
+                <div>
+                    <h1>Saúde:</h1>
+                    <p>Essencial para a visão humana, mas exposição a luz intensa pode causar danos aos olhos.</p>
+                </div>
+                <div>
+                    <h1>Onde é usada?</h1>
+                    <p>Iluminação, fotografia, comunicações via fibra óptica.</p>
+                </div>
+                <div>
+                    <h1>Comprimento da onda:</h1>
+                    <p>Entre 400 e 700 nanômetros.</p>
+                </div>
+                <div>
+                    <h1>Frequência:</h1>
+                    <p>Entre 430 e 770 THz.</p>
+                </div>
+                <img src="assets/ondas/visivel.png" alt="Visible Light">
+            </div>
+            <button class="closeButton" onclick="closeCard(this)">X</button>
+        </div>
+        
+        <div id="card6" class="card-content">
+            <h1>Ondas Ultravioletas</h1>
+            <div class="card-text">
+                <div>
+                    <h1>Saúde:</h1>
+                    <p>Exposição excessiva pode causar queimaduras solares e aumentar o risco de câncer de pele.</p>
+                </div>
+                <div>
+                    <h1>Onde é usada?</h1>
+                    <p>Esterilização, bronzeamento artificial, astronomia.</p>
+                </div>
+                <div>
+                    <h1>Comprimento da onda:</h1>
+                    <p>Entre 10 e 400 nanômetros.</p>
+                </div>
+                <div>
+                    <h1>Frequência:</h1>
+                    <p>Entre 750 THz e 30 PHz.</p>
+                </div>
+                <img src="assets/ondas/ultravioleta.png" alt="Ultraviolet Waves">
+            </div>
+            <button class="closeButton" onclick="closeCard(this)">X</button>
+        </div>
+        
+        <div id="card7" class="card-content">
+            <h1>Ondas de Raio-X</h1>
+            <div class="card-text">
+                <div>
+                    <h1>Saúde:</h1>
+                    <p>Exposição prolongada pode danificar células e aumentar o risco de câncer, mas são essenciais em diagnósticos médicos.</p>
+                </div>
+                <div>
+                    <h1>Onde é usada?</h1>
+                    <p>Imagens médicas, segurança de aeroportos, inspeções industriais.</p>
+                </div>
+                <div>
+                    <h1>Comprimento da onda:</h1>
+                    <p>Entre 0,01 e 10 nanômetros.</p>
+                </div>
+                <div>
+                    <h1>Frequência:</h1>
+                    <p>Entre 30 PHz e 30 EHz.</p>
+                </div>
+                <img src="assets/ondas/raiosx.png" alt="X-Rays">
+            </div>
+            <button class="closeButton" onclick="closeCard(this)">X</button>
+        </div>
+        
+        <div id="card8" class="card-content">
+            <h1>Ondas de Raios Gama</h1>
+            <div class="card-text">
+                <div>
+                    <h1>Saúde:</h1>
+                    <p>Altamente perigosas, podem causar danos severos ao DNA e são usadas em tratamentos contra o câncer.</p>
+                </div>
+                <div>
+                    <h1>Onde é usada?</h1>
+                    <p>Radioterapia, detecção de explosões cósmicas, esterilização de equipamentos médicos.</p>
+                </div>
+                <div>
+                    <h1>Comprimento da onda:</h1>
+                    <p>Menos de 0,01 nanômetros.</p>
+                </div>
+                <div>
+                    <h1>Frequência:</h1>
+                    <p>Acima de 30 EHz.</p>
+                </div>
+                <img src="assets/ondas/raiosgama.png" alt="Gamma Rays">
+            </div>
+            <button class="closeButton" onclick="closeCard(this)">X</button>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

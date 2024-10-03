@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+body{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 7s ease infinite;
+	height: 100vh;
+}
+#ondas{
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1.6);
+    user-select: none;
+}
+#ondas div{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+#ondas div:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+#ondas div p{
+    width: 60px;
+    transform: rotate(270deg);
+}
+#ondas .ondas-baixas{
+    background-color: #FFFFD5;
+    width: 200px;
+    border-radius: 10px 0 0 10px;
+}
+#ondas .ondas-radio{
+    background-color: #FFFF00;
+    width: 250px;
+}
+#ondas .ondas-radio .ondas-radio-microondas{
+    background-color: #FFC000;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    top: 25px;
+    left: 20px;
+}
+#ondas .ondas-radio .ondas-radio-microondas p{
+    width: 200px;
+}
+#ondas .ondas-infravermelhas{
+    width: 70px;
+    background: linear-gradient(to top, rgb(247, 70, 70), rgb(255, 211, 211), white);
+}
+#ondas .ondas-infravermelhas p{
+    width: 100px;
+}
+#ondas .luz-visivel{
+    width: 90px;
+    display: flex;
+    flex-direction: row;
+}
+#ondas .luz-visivel .vermelho{
+    width: 20px;
+    background-color: red;
+}
+#ondas .luz-visivel .laranja{
+    width: 10px;
+    background-color: orange;
+}
+#ondas .luz-visivel .amarelo{
+    width: 10px;
+    background-color: yellow;
+}
+#ondas .luz-visivel .verde{
+    width: 10px;
+    background-color: rgb(135, 224, 2);
+}
+#ondas .luz-visivel .azul-claro{
+    width: 10px;
+    background-color: rgb(142, 216, 245);
+}
+#ondas .luz-visivel .azul-escuro{
+    width: 10px;
+    background-color: rgb(6, 30, 247);
+}
+#ondas .luz-visivel .roxo{
+    width: 20px;
+    background-color: rgb(119, 1, 173);
+}
+#ondas .ondas-ultravioletas{
+    width: 70px;
+    background: linear-gradient(to top, rgb(116, 0, 170), rgb(220, 194, 255), white);
+}
+#ondas .ondas-raiox{
+    width: 160px;
+    background-color: grey;
+    color: #fff;
+}
+#ondas .ondas-raiox p{
+    width: 70px;
+}
+#ondas .ondas-raiosgama{
+    width: 200px;
+    background-color: black;
+    color: #fff;
+    border-radius: 0 10px 10px 0;
+}
+#card{
+    display: none;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.486);
+    cursor: pointer;
+}
+#card .card-content{
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    border-radius: 20px;
+    z-index: 10;
+    padding: 10px;
+    color: #fff;
+    gap: 20px;
+}
+.closeButton{
+    background-color: rgb(139, 139, 139);
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 770px;
+}
+.card-content h1{
+    font-size: 24px;
+}
+.content{
+    display: flex;
+}
+.content div{
+    width: 50%;
+}
+.content .images{
+    width: 100%;
+}
+.content .images img{
+    width: 90%;
+    border-radius: 20px;
+}
+.content div:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#card1{
+    background-color: #FFFFD5;
+    color: black !important;
+}
+#card2{
+    background-color: #FFFF00;
+    color: black !important;
+}
+#card3{
+    background-color: #FFC000;
+    color: black !important;
+}
+#card4{
+    background: linear-gradient(to top, rgb(247, 70, 70), rgb(255, 211, 211), white);
+    color: black !important;
+}
+#card5{
+    background-color: #dfdfdf;
+    color: black !important;
+    border: 4px solid red;
+    animation: border 4s ease infinite;
+}
+#card6{
+    background: linear-gradient(to top, rgb(116, 0, 170), rgb(220, 194, 255), white);
+    color: black !important;
+}
+#card7{
+    background-color: gray;
+}
+#card8{
+    background-color: black;
+}
+
+@keyframes border{
+    0%{
+        border: 4px solid red;
+    }
+    20%{
+        border: 4px solid orange;
+    }
+    40%{
+        border: 4px solid yellow;
+    }
+    60%{
+        border: 4px solid greenyellow;
+    }
+    80%{
+        border: 4px solid blue;
+    }
+    100%{
+        border: 4px solid #8818f8;
+    }
+    80%{
+        border: 4px solid blue;
+    }
+    60%{
+        border: 4px solid greenyellow;
+    }
+    40%{
+        border: 4px solid yellow;
+    }
+    20%{
+        border: 4px solid orange;
+    }
+    0%{
+        border: 4px solid red;
+    }
+}
+
+.card-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.card-text div{
+    width: 80%;
+}
+.card-text img{
+    width: 400px;
+    border-radius: 20px;
+}
+.card-text img:hover{
+    transform: scale(1.05);
+    transition: 0.6s;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
