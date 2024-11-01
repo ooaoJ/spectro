@@ -2,6 +2,7 @@ let cardMain = document.getElementById('card');
 
 function openAbout(id){
     let cardContent = document.getElementById('card'+id)
+
     switch(id){
         case '1':
             cardMain.style.display = "flex";
@@ -46,11 +47,17 @@ function closeCard(buttonElement){
     cardMain.style.display = "none";
 }
 
-function closeAllCards(){
-    let cardContents = document.getElementsByClassName('card-content');
-    for(let i=0; i<cardContents.length; i++){
-        cardContents[i].style.display = "none";
-    }
-    cardMain.style.display = "none";
+// function closeAllCards(){
+//     let cardContents = document.getElementsByClassName('card-content');
+//     for(let i=0; i<cardContents.length; i++){
+//         cardContents[i].style.display = "none";
+//     }
+//     cardMain.style.display = "none";
 
+// }
+
+function openMore(id){
+    switch(id){
+        
+    }
 }
